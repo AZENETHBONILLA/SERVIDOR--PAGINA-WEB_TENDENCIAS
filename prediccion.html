@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Consumo en Neon Coffee & Lunch</title>
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+<body>
+    <header class="header__login">
+        <h1>Predicción de Consumo en Neon Coffee & Lunch</h1>
+    </header>
+    <main class="main">
+        <section class="form-section">
+            <h2>Ingrese los datos para conocer las tendencias</h2>
+            <form id="predictionForm">
+                <label for="day">Día de la semana:</label>
+                <select id="day" name="day" required>
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miércoles">Miércoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sábado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+
+                <label for="time">Hora del día:</label>
+                <input type="time" id="time" name="time" required>
+
+
+                <button type="submit" class="submit-button">Buscar</button>
+            </form>
+        </section>
+        <section class="result-section">
+            <h2>Predicción de Consumo</h2>
+            <div id="result">
+                <img src="/images/cargando.gif" alt="Cargando" id="loadingImage" style="display:none;">
+                <p id="predictionText">Ingrese los datos para obtener .</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__login">
+        <p>&copy; 2024 NEON COFFEE & LUNCH. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script src="/templates/script2.js"></script>
+</html>

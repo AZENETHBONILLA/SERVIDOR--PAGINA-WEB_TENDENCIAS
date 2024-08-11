@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Neon</title>
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header__index">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo de Cafetería Neon" class="logo__img">
+        </div>
+        <h1 class="header__h1">NEON COFFEE & LUNCH</h1>
+        <nav>
+            <ul class="nav__menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#trending">Tendencias</a></li>
+                <li><a href="#login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="home" class="section_primero">
+        <h2>Bienvenidos a Cafetería Neon Coffee & Lunch</h2>
+        <p>Disfruta de nuestras bebidas y alimentos en un ambiente único y moderno.</p>
+    </section>
+
+    <!-- Sección de Alimentos en Tendencia -->
+    <section id="trending">
+        <h2>Alimentos en Tendencia</h2>
+        
+        <div class="food-item">
+            <img src="/images/cafe.png" alt="Café Latte">
+            <h3>Café Americano</h3>
+            <p>Un delicioso café con leche, con una suave capa de espuma. Perfecto para cualquier momento del día.</p>
+        </div>
+        
+        <div class="food-item">
+            <img src="/images/papas.jpg" alt="Papas a la francesa">
+            <h3>Papas a la Francesa</h3>
+            <p>Deliciosas papas fritas, crujientes por fuera y suaves por dentro. Perfectas para acompañar cualquier platillo o disfrutar solas con tus salsas favoritas.</p>
+        </div>
+        
+        <div class="food-item">
+            <img src="/images/boonless.jpg" alt="Boneless">
+            <h3>Boneless</h3>
+            <p>Tiernos trozos de pechuga de pollo sin hueso, empanizados y fritos a la perfección. Disponibles en una variedad de salsas para satisfacer todos los gustos.</p>
+        </div>
+        
+        <div class="food-item">
+            <img src="/images/alitas.jpeg" alt="Alitas">
+            <h3>Alitas</h3>
+            <p>Jugosas alitas de pollo, servidas con una selección de salsas picantes y sabrosas. Ideales para compartir y disfrutar en cualquier ocasión.</p>
+        </div>
+        
+
+        <!-- Agrega más alimentos en tendencia aquí -->
+    </section>
+
+
+    <!-- Sección de Inicio de Sesión -->
+    <section id="login" class="login-section">
+        <h2>Iniciar Sesión</h2>
+        <form action="/login" method="post" onsubmit="enviarFormulario(event)">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="usuario" name="username" placeholder="Ingresa tu usuario" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer class="footer__index">
+        <p>&copy; 2024 NEON COFFEE & LUNCH. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/templates/script.js"></script>
+</body>
+</html>
